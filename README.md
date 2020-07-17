@@ -48,6 +48,8 @@ ImGuiLayer::createAndKeepOnTop();
    ImGuiIO &io = ImGui::GetIO();
    io.Fonts->AddFontFromFileTTF("res/wqy-zenhei.ttf", 18.0f, 0, io.Fonts->GetGlyphRangesChinese());
    ```
+##Note
+由于需要使用glfw的函数，libcocos2dx动态库同样引用了glfw，所以应该用glfw的动态库。
 
 ## Lua binding
 
